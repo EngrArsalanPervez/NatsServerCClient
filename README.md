@@ -27,7 +27,9 @@ Go to FIFO > README.md
 ```bash
 sudo -s
 cd /usr/bin/
-curl -sf https://binaries.nats.dev/nats-io/nats-server/v2@v2.10.14 | sh
+curl -L https://github.com/nats-io/nats-server/releases/download/v2.10.17/nats-server-v2.10.17-linux-amd64.zip -o nats-server.zip
+unzip nats-server.zip -d nats-server
+sudo cp nats-server/nats-server-v2.10.17-linux-amd64/nats-server /usr/bin
 
 # Running nats server without conf file
 /usr/bin/nats-server
