@@ -6,9 +6,15 @@ NATS Server is like a PIPE/FIFO between two physical systems or applications. On
 
 ### Basic NATS Server as a PIPE with no Data-Retention or Data-Deletion Policy
 
-Go to FIFO > README.md
+Go to FIFO_Basic_withNoStorage > README.md
+
+### Basic NATS Server with Data-Retention and Data-Deletion Policy
+
+Go to FIFO_Basic_withStorage > README.md
 
 ### Advanced NATS Server with Data-Retention and Data-Deletion Policy
+
+Go to FIFO_Adv_withStorage > README.md
 
 ## Pre-requisites
 
