@@ -35,7 +35,7 @@ sudo cp nats-server/nats-server-v2.10.17-linux-amd64/nats-server /usr/bin
 /usr/bin/nats-server
 
 # Running nats server with conf file
-/usr/bin/nats-server -c /home/<USER>/nats-server.conf
+/usr/bin/nats-server -c /home/<USER>/NATS/nats-server.conf
 
 # Web Monitor
 http://0.0.0.0:8222/
@@ -54,8 +54,9 @@ JetStream is highly customize able and we can define data-retention and data-del
 ### nats-server.conf
 
 ```bash
-mkdir /tmp/jetstream/
-cd /home/<USER>/
+mkdir /home/<USER>/NATS/
+sudo chmod 777 /home/<USER>/NATS/
+cd /home/<USER>/NATS/
 nano nats-server.conf
 ```
 
@@ -68,7 +69,7 @@ jetstream: enabled
 
 # JetStream storage configuration
 jetstream: {
-  store_dir: /tmp/jetstream
+  store_dir: /home/<USER>/NATS
 }
 
 # General server configuration
@@ -77,7 +78,7 @@ http: 8222
 debug: true
 trace: true
 logtime: true
-pid_file: "/tmp/jetstream/nats-server.pid"
+pid_file: "/home/<USER>/NATS/nats-server.pid"
 ```
 
 ### nats-cli
