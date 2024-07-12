@@ -4,6 +4,12 @@
 
 NATS Server is like a PIPE/FIFO between two physical systems or applications. One application sends data to NATS server while the other application receives data from NATS server
 
+### Basic NATS Server as a PIPE with no Data-Retention or Data-Deletion Policy
+
+Go to FIFO > README.md
+
+### Advanced NATS Server with Data-Retention and Data-Deletion Policy
+
 ## Pre-requisites
 
 1. Ubuntu
