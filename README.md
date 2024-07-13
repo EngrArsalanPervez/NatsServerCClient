@@ -173,6 +173,7 @@ cd build
 cmake ..
 make
 sudo make install
+ldconfig
 cd bin/
 ./js-pub -h
 ./js-sub -h
