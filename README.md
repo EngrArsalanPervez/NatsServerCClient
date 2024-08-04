@@ -179,3 +179,4 @@ cd bin/
 ./js-sub -h
 ```
 
+Project Implemented on [Academic Master](https://academic-master.com/)
